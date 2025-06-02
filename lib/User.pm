@@ -40,13 +40,8 @@ sub generator {
 
     return $password;
 }
-print "What application is this password for? ";
-my $application = <STDIN>;
-chomp($application);
 
-our $password = generator(get_length_input);
 
-print "Generated password for $application: $password \n";
 
 1;
 
